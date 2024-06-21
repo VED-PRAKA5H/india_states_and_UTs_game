@@ -12,44 +12,15 @@ screen.bgpic('bharat.gif')
 # register a shape in turtle
 image = 'bharat.gif'
 screen.addshape(image)
-# turtle.shape(image)
-# screen.tracer(1)
+
 
 # creating turtle object
 turtle_obj = Turtle()
 turtle_obj.penup()
 turtle_obj.hideturtle()
 
-
-# screen.listen()
-# def up():
-#     turtle_obj.setheading(90)
-#     turtle_obj.forward(20)
-#
-# def down():
-#     turtle_obj.setheading(270)
-#     turtle_obj.forward(20)
-# def forward():
-#     turtle_obj.setheading(0)
-#     turtle_obj.forward(20)
-#
-# def backward():
-#     turtle_obj.setheading(180)
-#     turtle_obj.forward(20)
-#
-#
-
-# x = [-55.0, 179.0, 47.0, -11.0, -136.0, -164.0, -92.0, -80.0, 38.0, -107.0, -97.0, 151.0, -71.0, -115.0, 169.0, 135.0,
-#      158.0, 178.0, 30.0, -107.0, -135.0, 87.0, -69.0, -58.0, 138.0, -50.0, -31.0, 80.0, 174.0, -95.0, [-149.0,
-#      -168.0], -80.0, -115.0, -81.0, -166.0, -43.0]
-# y = [-143.0, 95.0, 42.0, -31.0, -128.0, -2.0, 98.0, 144.0, 3.0, -143.0, -217.0, 57.0, -3.0, -61.0, 33.0, 44.0, 11.0,
-#      61.0, -41.0, 129.0, 54.0, 72.0, -212.0, -93.0, 13.0, 112.0, 58.0, 2.0, -189.0, 125.0, [-47.0, -33.0], 90.0,
-#      172.0, 189.0, -197.0, -193.0]
-# turtle_obj.shape('turtle')
 df = pd.read_csv('36_states_UTs.csv')
-# df['X'] = x
-# df['Y'] = y
-# df.to_csv('36_states_UTs.csv')
+
 x = df.X
 y = df.Y
 su = df.States_and_Uts
@@ -103,12 +74,5 @@ while game_is_on:
 
 
 
-#     screen.update()
-#     time.sleep(0.1)
-#     screen.onkey(down, 'Down')
-#     screen.onkey(up, 'Up')
-#     screen.onkey(fun=forward, key='Right')
-#     screen.onkey(backward, 'Left')
-# screen.exitonclick()
 turtle.mainloop()
 
